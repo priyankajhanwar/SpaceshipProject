@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Spaceship</title>
+  <link rel="stylesheet" type="text/css" href="myStyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="initialJS.js"></script>
+
+<script src="myScripts.js"></script>
+<script src="rotateSpaceships.js"></script>
+</head>
+<body>
+  <div id="container"></div>
+  <span>
+  <!--  New request button to change spaceship positions-->
+       <input type="button" value="NEW REQUEST" onclick=newRequest()>
+
+  <!--  textbox for inserting grid value-->
+        <input type="text" id="place" placeholder="Enter location i.e dXf" value="">
+        <input type="button" id="getLocation" value="GET SPACESHIPNAME" onclick=locate()>
+  </span>
+  <!-- block for printing name of spaceship-->
+    <div id="printLocation">   
+    </div>
+  </div>
+
+</body>
+</html>
